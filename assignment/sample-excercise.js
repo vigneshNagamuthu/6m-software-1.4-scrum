@@ -37,5 +37,22 @@ function checkDiv(num){
 
 // checkDiv(10); 
 
+// Challenge 1: Create a function that checks if a year is a leap year or not
+
+function checkLeap(year){
+    checkCondition = false; 
+    checkCondition = (year % 4 == 0) && (year % 100 ==0) && (year % 400 == 0);
+    
+    if(checkCondition){
+        console.log(year + " is a leap year")
+    }
+    else{
+        console.log("not leap year"); 
+    }
+
+    console.log(checkCondition); 
+}
+
+checkLeap(2000); 
 
 
